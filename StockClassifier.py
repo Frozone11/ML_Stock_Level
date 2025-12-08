@@ -13,7 +13,7 @@ from sklearn.metrics import (
 
 # ======================================================
 # EDIT THIS IF NEEDED:
-EXCEL_PATH = "data/ultrasound_bottom.xlsx"  # or "data/ultrasound_bottom.xlsx"
+EXCEL_PATH = "data/ultrasound_top.xlsx"  # or "data/ultrasound_bottom.xlsx"
 SHEET_NAME = "Data"  # or "Data" / "Sheet1" if you want by name
 # ======================================================
 
