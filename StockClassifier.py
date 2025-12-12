@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+import joblib
 
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
@@ -63,6 +64,11 @@ def main():
         n_jobs=-1
     )
     clf.fit(X_train, y_train)
+
+    # Save model
+    MODEL_PATH = "models/RandomForest_top.pkl"
+    joblib.dump(clf, MODEL_PATH)
+    print(f"Model saved to {MODEL_PATH}")
 
     # Predictions and metrics
     y_pred = clf.predict(X_test)
